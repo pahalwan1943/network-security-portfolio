@@ -42,7 +42,8 @@ As a result, critical Microsoft Teams components failed to load.
 ## Fix Implementation
 - Identified the restrictive URL Filtering rule
 - Allowed Microsoft 365 traffic using supported allow-listing
-- Bypassed URL Filtering for Microsoft Teams related services
+- prevent category-based blocking while maintaining security controls
+for other traffic.
 
 ## Verification
 - Firewall logs confirmed no further drops
