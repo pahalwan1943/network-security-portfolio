@@ -8,7 +8,7 @@ were working fine.
 ## Environment
 - Firewall: Check Point
 - Feature involved: URL Filtering
-- User VLAN: 172.20.30.0/24
+- User VLAN: X
 - Application: Microsoft Teams / SharePoint Online
 
 ## Problem Statement
