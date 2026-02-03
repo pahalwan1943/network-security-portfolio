@@ -7,6 +7,6 @@ This repository contains real-world network security and SD-WAN projects with:
 
 ## Projects
 1. Microsoft Teams Firewall Issue (VLAN Specific)
-2. 🔗 Open Project: [Microsoft Teams Firewall Issue](projects/teams-firewall-issue/)
+    🔗 Open Project: [Microsoft Teams Firewall Issue](projects/teams-firewall-issue/)
 
 > Note: All sensitive data has been sanitized before publishing.
