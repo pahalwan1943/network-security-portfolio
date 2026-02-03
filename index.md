@@ -6,7 +6,7 @@ This repository contains real-world network security and SD-WAN projects with:
 - Sanitized configurations (where applicable)
 
 ## Live Portfolio
-- Website: https://pahalawan1943.github.io/network-security-portfolio/
+- Website: (https://pahalwan1943.github.io/network-security-portfolio/)
 
 ## Projects
 1. Microsoft Teams Firewall Issue (VLAN Specific)
