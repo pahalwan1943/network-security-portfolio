@@ -6,7 +6,7 @@ Users from one VLAN faced Microsoft Teams issues because required Microsoft 365 
 ## Environment
 - Firewall: Check Point
 - Feature: URL Filtering
-- Impacted VLAN: 172.20.30.0/24
+- Impacted VLAN: X
 
 ## Root Cause
 URL Filtering categorized SharePoint traffic as "File Storage and Sharing" and blocked it for that VLAN, which impacted Teams features.
