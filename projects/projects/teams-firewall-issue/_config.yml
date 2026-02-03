@@ -1,0 +1,7 @@
+title: Network Security Portfolio
+description: Real-world Network Security & SD-WAN projects with documentation and lab evidence
+theme: minima
+
+header_pages:
+  - index.md
+  - projects.md
