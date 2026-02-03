@@ -24,3 +24,32 @@ VLAN due to security policy restrictions.
 ## Outcome
 Root cause was identified as URL Filtering policy blocking required
 Microsoft 365 backend services used by Microsoft Teams.
+
+## Root Cause Analysis
+The issue was caused by a URL Filtering policy on the Check Point firewall.
+Microsoft Teams relies on backend services hosted on SharePoint Online
+(`sharepoint.com`) for chat, meeting content, and file access.
+
+The URL Filtering blade categorized SharePoint traffic under
+**File Storage and Sharing**, which was blocked for the affected VLAN.
+As a result, critical Microsoft Teams components failed to load.
+
+## Evidence Collected
+- Firewall logs showed dropped connections to `sharepoint.com`
+- Drops occurred only for the affected VLAN subnet
+- Users from other VLANs were not impacted
+
+## Fix Implementation
+- Identified the restrictive URL Filtering rule
+- Allowed Microsoft 365 traffic using supported allow-listing
+- Bypassed URL Filtering for Microsoft Teams related services
+
+## Verification
+- Firewall logs confirmed no further drops
+- Microsoft Teams meetings, chat, and content loaded successfully
+- Users confirmed stable performance after the change
+
+## Lessons Learned
+- Modern SaaS applications depend on multiple backend services
+- URL category-based blocking can impact business-critical applications
+- Vendor-recommended allow-listing should be preferred for SaaS platforms
